@@ -1,0 +1,92 @@
+CNN 6 epochs
+
+Trained model
+Test Accuracy of the model on the 10000 test images: 0.99
+correct=9911 total=10000 len(loaders["test"])=100
+Testing model against test data
+Confusion matrix
+[[ 979    0    0    0    0    0    0    1    0    0]
+ [   1 1130    1    1    0    1    0    1    0    0]
+ [   2    1 1022    4    0    0    1    2    0    0]
+ [   0    0    0 1003    0    3    0    1    3    0]
+ [   0    0    0    0  972    0    5    0    0    5]
+ [   1    0    0    5    0  876    9    0    0    1]
+ [   6    2    0    0    1    0  949    0    0    0]
+ [   0    2    2    0    0    0    0 1021    1    2]
+ [   4    0    2    1    1    1    1    0  962    2]
+ [   0    0    0    1    6    2    1    2    0  997]]
+
+CNN 12 epochs
+
+Trained model
+Test Accuracy of the model on the 10000 test images: 0.99
+correct=9896 total=10000 len(loaders["test"])=100
+Testing model against test data
+Confusion matrix
+[[ 972    1    0    0    0    1    5    1    0    0]
+ [   0 1132    0    0    0    1    1    1    0    0]
+ [   0    2 1017    5    0    0    1    7    0    0]
+ [   0    0    3  998    0    4    0    2    3    0]
+ [   0    0    1    0  967    0    5    0    0    9]
+ [   1    0    0    3    0  885    1    0    1    1]
+ [   1    1    0    0    0    3  953    0    0    0]
+ [   0    2    1    1    0    0    0 1021    0    3]
+ [   4    2    2    6    0    1    3    2  950    4]
+ [   0    0    0    0    3    4    0    1    0 1001]]
+
+
+
+HOG 8x8
+
+Loading cached HOGs
+Fitting SVM
+Saving fitted SVM
+Testing model against test data
+Correct: 9724 / 10000 (accuracy: 0.9724)
+Confusion matrix
+[[ 973    0    1    0    0    0    5    1    0    0]
+ [   1 1124    6    0    2    0    1    1    0    0]
+ [   2    0 1011    6    2    0    1    8    2    0]
+ [   2    2    8  979    0    2    0    4    6    7]
+ [   4    1    0    0  950    0    9    2    2   14]
+ [   3    0    0   10    0  865    7    1    5    1]
+ [   6    2    1    0    2    4  940    0    2    1]
+ [   0    3   13    3   11    0    0  981    4   13]
+ [   6    1    4   12    2    4    1    3  934    7]
+ [   2    3    0    5   11    4    0    4   13  967]]
+
+HOG 6x6
+Computing HOGs for MNIST dataset
+Fitting SVM
+Saving fitted SVM
+Testing model against test data
+Correct: 9829 / 10000 (accuracy: 0.9829)
+Confusion matrix
+[[ 975    2    0    0    0    0    2    1    0    0]
+ [   0 1127    3    0    0    1    1    1    2    0]
+ [   1    2 1018    2    1    0    2    5    1    0]
+ [   0    0    4  990    0    5    0    5    6    0]
+ [   0    0    1    0  960    0    8    0    1   12]
+ [   1    0    1    5    0  878    4    0    2    1]
+ [   3    2    0    0    0    5  946    0    2    0]
+ [   1    2    5    3    2    1    0 1011    0    3]
+ [   3    1    1   11    6    1    0    1  945    5]
+ [   2    3    0    4    7    0    0    9    5  979]]
+
+HOG 4x4
+Computing HOGs for MNIST dataset
+Fitting SVM
+Saving fitted SVM
+Testing model against test data
+Correct: 9891 / 10000 (accuracy: 0.9891)
+Confusion matrix
+[[ 978    0    0    0    0    0    1    1    0    0]
+ [   0 1129    1    1    0    1    2    0    1    0]
+ [   1    2 1023    0    0    0    0    5    1    0]
+ [   0    1    1 1000    0    3    0    2    3    0]
+ [   0    0    0    0  972    0    2    0    1    7]
+ [   1    0    1    7    0  882    1    0    0    0]
+ [   2    3    0    0    1    2  950    0    0    0]
+ [   0    2    5    0    3    0    0 1012    0    6]
+ [   1    1    1    5    2    1    0    3  957    3]
+ [   1    4    1    2    3    2    0    4    4  988]]
